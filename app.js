@@ -4,6 +4,20 @@ const app = Vue.createApp({
             courseGoal: 'Finish the course and learn Vue',
             vueLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         };
+    },
+    methods: {
+        outputGoal() {
+            const randomNumber = Math.random();
+
+            if(randomNumber < 0.5){
+                return 'Learn Vue!'
+            }
+            
+            else
+            {
+                return 'Master Vue!'
+            }
+        }
     }
 });
 
